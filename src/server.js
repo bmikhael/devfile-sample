@@ -49,20 +49,20 @@ const pino = require('pino')({
 });
 app.use(require('pino-http')({logger: pino}));
 
-app.get('/', (req, res) => {	
-  // Use req.log (a `pino` instance) to log JSON:	
-  req.log.info({message: 'Hello from Node.js Starter Application!'});		
-  res.send('Hello from Node.js Starter Application!');	
-});	
+app.get('/', (req, res) => {
+  // Use req.log (a `pino` instance) to log JSON:
+  req.log.info({message: 'Hello from Node.js Starter Application!'});
+  res.send('Hello from Node.js Starter Application!');
+});
 
 app.get('*', (req, res) => {
   res.status(404).send("Not Found");
 });
 
 // Listen and serve.
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 4000;
 if (process.argv.length == 3 && process.argv[2] == "console") {
-  PORT = 3001
+  PORT = 4001
 }
 server.listen(PORT, () => {
   console.log(`App started on PORT ${PORT}`);

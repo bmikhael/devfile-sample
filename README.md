@@ -8,8 +8,8 @@ Health-checking enables the cloud platform to determine the `readiness` and `liv
 
  These endpoints will be available for you to use:
 
-- Readiness endpoint: http://localhost:3000/ready
-- Liveness endpoint: http://localhost:3000/live
+- Readiness endpoint: http://localhost:4000/ready
+- Liveness endpoint: http://localhost:4000/live
 
 ## Application metrics
 
@@ -17,7 +17,7 @@ The [prom-client](https://www.npmjs.com/package/prom-client) module will collect
 
  This endpoints will be available for you to use:
 
-- Metrics endpoint: http://localhost:3000/metrics
+- Metrics endpoint: http://localhost:4000/metrics
 
 ## License
 
